@@ -17,6 +17,3 @@ The project focuses on responsive design and clean user interface.
 - Clean and simple layout
 - Built with Bootstrap
 - Easy to customize
-
-👩‍💻 Author
-Mariem Abdelsalam
