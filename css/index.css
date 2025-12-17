@@ -1,0 +1,172 @@
+* {
+    font-family: sans-serif;
+}
+
+:root {
+    --deep-magenta: #AA1BA5;
+    --dark-purple: #8317C0;
+    --traansition: all .5s;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+/* start header  */
+.navbar .navbar-brand {
+    color: var(--deep-magenta);
+}
+
+nav .navbar-nav .nav-item a:hover {
+    transition: var(--traansition);
+    color: var(--deep-magenta);
+}
+
+nav i:hover {
+    color: var(--deep-magenta);
+    transition: var(--traansition);
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: var(--deep-magenta) !important;
+}
+
+
+.header .content h2 {
+    color: var(--deep-magenta);
+}
+
+.header .content button {
+    background-color: var(--deep-magenta);
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+}
+
+header img {
+    transform: translate(20%, 10%);
+}
+
+header .image::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(to right, var(--dark-purple), var(--deep-magenta));
+    border-radius: 50%;
+
+}
+
+/* end header  */
+
+main h2 {
+    color: var(--deep-magenta);
+}
+
+
+/* start product */
+.btn {
+    background: linear-gradient(to right, var(--deep-magenta), var(--dark-purple));
+}
+
+.product .card {
+    cursor: pointer;
+    border: 1px solid #C3B2DD;
+    height: 410px;
+    box-shadow: 0px 0px 10px #a38ecb;
+}
+
+.product img {
+    height: 200px;
+    object-fit: contain;
+}
+
+.product .icons {
+    top: 5%;
+    left: -15%;
+    opacity: 0;
+}
+
+.product .card:hover .icons {
+    transition: var(--traansition);
+    left: 5%;
+    opacity: 1;
+}
+
+/* end product */
+
+
+/* start about */
+
+.about .card {
+    border: 1px solid var(--deep-magenta);
+    box-shadow: 0px 0px 14px #a38ecb;
+}
+
+.about .card p {
+    color: var(--dark-purple);
+}
+.about .shop button {
+    transition: var(--traansition);
+    border: 1px solid var(--deep-magenta);
+}
+.about .shop button:hover {
+    background-color: #992E75;
+    color: white;
+}
+/* end about */
+
+
+/* start review */
+
+.review .card img {
+    width: 50px;
+    height: 50px;
+    transition: var(--traansition);
+}
+.review .card img:hover {
+    transform: scale(1.1);
+}
+/* end review */
+
+form .form-control {
+    border: 1px solid var(--deep-magenta);
+}
+form a {
+    color: var(--deep-magenta);
+}
+form button {
+    background:linear-gradient(to right , var(--deep-magenta) , var(--dark-purple) );
+}
+
+
+
+/* start footer */
+footer h2 {
+    color: var(--dark-purple);
+}
+
+footer i:hover {
+    transition: var(--traansition);
+    color: var(--deep-magenta);
+}
+
+/* end footer */
+
+@media (max-width: 767px) {
+    .header .content {
+        flex-direction: column;
+    }
+
+    main h2 {
+        margin-top: 90px;
+    }
+
+    .product .card {
+        margin: auto;
+        width: 80%;
+    }
+}
